@@ -1,8 +1,6 @@
-name: Generate Unique Pac-Man
+name: generate arcade
 
 on:
-  schedule:
-    - cron: "0 */24 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -13,16 +11,14 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-
-      - name: generate pink pacman
+      - name: generate puzzle bobble
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: lykabhabescairo37-maker
-          theme: dracula-dark
-          player_style: aggressive
-
+          games: 'puzzle-bobble'
       - name: push to output
         uses: crazy-max/ghaction-github-pages@v4
         with:
