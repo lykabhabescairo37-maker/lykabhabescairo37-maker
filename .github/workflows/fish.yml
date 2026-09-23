@@ -1,8 +1,8 @@
-name: Fish Swimming in Contributions
+name: Generate Unique Pac-Man
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */24 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -10,21 +10,21 @@ on:
 
 jobs:
   generate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
     permissions:
       contents: write
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - uses: Platane/snk@v3
+
+      - name: generate pink pacman
+        uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: lykabhabescairo37-maker
-          outputs: |
-            dist/fish.svg
-            dist/fish-dark.svg?palette=github-dark
+          theme: dracula-dark
+          player_style: aggressive
 
-      - uses: crazy-max/ghaction-github-pages@v4
+      - name: push to output
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
