@@ -1,5 +1,9 @@
 ### Hi, I'm Kai! 👋
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lykabhabescairo37-maker/lykabhabescairo37-maker/output/dist/pacman-contribution-graph-dark.svg" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lykabhabescairo37-maker/lykabhabescairo37-maker/output/dist/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lykabhabescairo37-maker/lykabhabescairo37-maker/output/dist/pacman-contribution-graph.svg">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/lykabhabescairo37-maker/lykabhabescairo37-maker/output/dist/pacman-contribution-graph.svg">
+  </picture>
 </p>
