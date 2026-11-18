@@ -8,20 +8,4 @@
   </picture>
 </p>
 
-<table>
-  <tr>
-    <td></td>
-    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=lykabhabescairo37-maker&theme=tokyonight" /></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=lykabhabescairo37-maker&theme=tokyonight" /></td>
-    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=lykabhabescairo37-maker&theme=tokyonight" /></td>
-    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=lykabhabescairo37-maker&theme=tokyonight" /></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><img src="https://github-profile-summary-cards.vercel.app/api/cards/commits-per-day?username=lykabhabescairo37-maker&theme=tokyonight" /></td>
-    <td></td>
-  </tr>
-</table>
+![image](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=lykabhabescairo37-maker&theme=tokyonight)
